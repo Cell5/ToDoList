@@ -1,0 +1,14 @@
+Primary   #9e9e9e grey
+
+P — Light #cfcfcf
+
+P — Dark  #707070
+
+
+Secondary #ff9800 orange (button)
+
+S — Light #ffc947
+
+S — Dark  #c66900
+
+text 	  #000000
