@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="82.0" prefWidth="400.0" style="-fx-background-color: #cfcfcf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="taskLabel" layoutX="69.0" layoutY="4.0" prefHeight="17.0" prefWidth="180.0" text="Task" wrapText="true">
+         <font>
+            <Font name="SansSerif Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" layoutX="71.0" layoutY="25.0" prefHeight="37.0" prefWidth="325.0" style="-fx-background-color: #cfcfcf;" text="Description" wrapText="true">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="226.0" layoutY="64.0" prefHeight="17.0" prefWidth="170.0" text="Date Created" textFill="#008300" />
+      <ImageView fx:id="deleteButton" fitHeight="30.0" fitWidth="30.0" layoutX="321.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-cancel-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconImgView" fitHeight="64.0" fitWidth="64.0" layoutX="3.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-tasks-100.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="166.0" layoutY="64.0" prefHeight="17.0" prefWidth="54.0" text="Created:" textFill="#008300">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutY="79.0" prefHeight="3.0" prefWidth="401.0" style="-fx-background-color: #707070;" />
+      <ImageView fx:id="editTaskBtn" fitHeight="30.0" fitWidth="30.0" layoutX="357.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-edit-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

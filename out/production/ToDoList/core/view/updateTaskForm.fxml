@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="400.0" style="-fx-background-color: #cfcfcf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.controller.UpdateTaskController">
+    <children>
+        <JFXTextField fx:id="updateTaskField" focusColor="#c66900" layoutX="31.0" layoutY="72.0" prefHeight="48.0" prefWidth="339.0" promptText="Task" unFocusColor="#707070">
+            <font>
+                <Font name="SansSerif Regular" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="updateDescriptionField" focusColor="#c66900" layoutX="31.0" layoutY="142.0" prefHeight="48.0" prefWidth="339.0" promptText="Description" unFocusColor="#707070">
+            <font>
+                <Font name="SansSerif Regular" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="updateTaskButton" buttonType="RAISED" layoutX="142.0" layoutY="235.0" prefHeight="33.0" prefWidth="117.0" ripplerFill="#616161" style="-fx-background-color: #ff9800;" text="Update">
+            <font>
+                <Font name="SansSerif Regular" size="18.0" />
+            </font>
+        </JFXButton>
+      <Label alignment="CENTER" prefHeight="33.0" prefWidth="400.0" style="-fx-background-color: #9e9e9e;" text="Update task">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="updateTaskCancelButton" buttonType="RAISED" layoutX="142.0" layoutY="297.0" prefHeight="33.0" prefWidth="117.0" ripplerFill="BLACK" style="-fx-background-color: #c54949;" text="Cancel">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

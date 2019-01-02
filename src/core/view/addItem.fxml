@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #cfcfcf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="core.controller.AddItemController">
+   <children>
+      <Label fx:id="appLabel" alignment="CENTER" prefHeight="100.0" prefWidth="640.0" style="-fx-background-color: #707070;" text="appLabel">
+         <font>
+            <Font name="SansSerif Regular" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="100.0" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: #9e9e9e;" text="Tasks">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="noTaskLabel" alignment="CENTER" layoutX="174.0" layoutY="222.0" prefHeight="37.0" prefWidth="293.0" text="You have no tasks today..." textFill="#515151">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addBtn" fitHeight="100.0" fitWidth="100.0" focusTraversable="true" layoutX="270.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-plus-100.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="67.0" layoutY="37.0" prefHeight="27.0" prefWidth="57.0" text="Back">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backBtn" fitHeight="53.0" fitWidth="57.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-back-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="todosBtn" buttonType="RAISED" layoutX="467.0" layoutY="429.0" prefHeight="37.0" prefWidth="158.0" ripplerFill="#678600" style="-fx-background-color: #ff9800;" text="My tasks list">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="noTaskLabel1" alignment="CENTER" layoutX="174.0" layoutY="281.0" prefHeight="37.0" prefWidth="293.0" text="add new task" textFill="#515151">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

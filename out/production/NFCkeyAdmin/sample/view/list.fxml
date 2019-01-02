@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #cfcfcf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ListController">
+   <children>
+      <Label alignment="CENTER" layoutY="100.0" prefHeight="35.0" prefWidth="640.0" style="-fx-background-color: #9e9e9e;" text="My Tasks">
+         <font>
+            <Font name="SansSerif Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="100.0" prefWidth="640.0" style="-fx-background-color: #707070;" text="NFCkey">
+         <font>
+            <Font name="SansSerif Regular" size="36.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="listTask" layoutX="190.0" layoutY="145.0" prefHeight="325.0" prefWidth="440.0" style="-fx-background-color: #cfcfcf;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <AnchorPane layoutY="135.0" prefHeight="345.0" prefWidth="181.0">
+         <children>
+            <JFXButton fx:id="listSaveTaskBtn" buttonType="RAISED" defaultButton="true" layoutX="26.0" layoutY="224.0" prefHeight="25.0" prefWidth="111.0" ripplerFill="#616161" style="-fx-background-color: #ff9800;" text="Save Task">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="listDescriptionField" focusColor="#c66900" labelFloat="true" layoutX="12.0" layoutY="144.0" prefHeight="44.0" prefWidth="138.0" promptText="Description" unFocusColor="#707070">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="listTaskField" focusColor="#c66900" labelFloat="true" layoutX="12.0" layoutY="64.0" prefHeight="44.0" prefWidth="138.0" promptText="Task" unFocusColor="#707070">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="listRefreshBtn" fitHeight="91.0" fitWidth="73.0" layoutX="553.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-restart-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="488.0" layoutY="40.0" text="Refresh">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="67.0" layoutY="37.0" prefHeight="27.0" prefWidth="57.0" text="Back">
+         <font>
+            <Font name="SansSerif Regular" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backBtn" fitHeight="53.0" fitWidth="57.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-back-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
