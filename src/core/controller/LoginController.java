@@ -78,7 +78,8 @@ public class LoginController {
 
                    showAddItemScreen();
 
-                } else {
+                }
+                else {
                     Shaker userNameShaker = new Shaker(loginUsername);
                     Shaker passwordShaker = new Shaker(loginPassword);
                     Shaker loginBtnShaker = new Shaker(loginBtn);
@@ -91,6 +92,7 @@ public class LoginController {
 
 
                 }
+
 
             } catch (SQLException e) {
                 e.printStackTrace();
